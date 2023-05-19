@@ -7,7 +7,7 @@ require("dotenv").config();
 
 // middleware
 app.use(cors());
-// app.use(express.json());
+app.use(express.json());
 
 //mongobd setup
 
@@ -30,6 +30,12 @@ async function run() {
     app.post("/addtoy", async (req, res) => {
       const toy = req.body;
       const result = await database.insertOne(toy);
+      res.send(result);
+    });
+
+    app.get("/alltoy/:cata", async (req, res) => {
+      const cata = req.params.cata;
+      const result = await database.find({ sub_cata: cata }).toArray();
       res.send(result);
     });
 
