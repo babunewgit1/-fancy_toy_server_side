@@ -59,15 +59,15 @@ async function run() {
       res.send(result);
     });
 
-    app.get("/mytoy/:email", async (req, res) => {
-      const mail = req.params.email;
-      const sort = req.query.sort;
-      const result = await database
-        .find({ seller_email: mail })
-        .sort({ price: sort })
-        .toArray();
-      res.send(result);
-    });
+    // app.get("/mytoy/:email", async (req, res) => {
+    //   const mail = req.params.email;
+    //   const sort = req.query.sort;
+    //   const result = await database
+    //     .find({ seller_email: mail })
+    //     .sort({ price: sort })
+    //     .toArray();
+    //   res.send(result);
+    // });
 
     app.put("/update/:id", async (req, res) => {
       const updateId = req.params.id;
