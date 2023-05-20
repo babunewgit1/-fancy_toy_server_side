@@ -33,10 +33,10 @@ async function run() {
       res.send(result);
     });
 
-    app.get("/kidstoy", async (req, res) => {
-      const result = await database.find({}).limit(20).toArray();
-      res.send(result);
-    });
+    // app.get("/kidstoy", async (req, res) => {
+    //   const result = await database.find({}).limit(20).toArray();
+    //   res.send(result);
+    // });
 
     app.get("/search/:text", async (req, res) => {
       const element = req.params.text;
