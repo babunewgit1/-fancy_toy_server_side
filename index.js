@@ -69,9 +69,9 @@ async function run() {
       res.send(result);
     });
 
-    // app.put("/update/:id", async (req, res) => {
-    //   const updateId = req.params.id;
-    //   const docs = req.body;
+    app.put("/update/:id", async (req, res) => {
+      const updateId = req.params.id;
+      const docs = req.body;
       const filter = { _id: new ObjectId(updateId) };
       const updateDoc = {
         $set: {
