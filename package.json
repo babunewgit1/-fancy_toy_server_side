@@ -11,9 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@remotion/cli": "^4.0.541",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "mongodb": "^5.5.0"
+    "hyperframes": "^0.9.15",
+    "mongodb": "^5.5.0",
+    "remotion": "^4.0.541"
   }
 }
