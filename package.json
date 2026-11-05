@@ -5,18 +5,25 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "video:studio": "remotion studio video/src/index.ts --public-dir=video/public",
+    "video:render": "remotion render video/src/index.ts FancyToyExplainer video/out/fancy-toy-explainer.mp4 --public-dir=video/public"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@remotion/cli": "^4.0.541",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "mongodb": "^5.5.0"
+  },
+  "devDependencies": {
+    "@remotion/cli": "^4.0.541",
+    "@remotion/google-fonts": "^4.0.541",
     "hyperframes": "^0.9.15",
-    "mongodb": "^5.5.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
     "remotion": "^4.0.541"
   }
 }
