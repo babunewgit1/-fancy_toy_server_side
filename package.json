@@ -7,7 +7,8 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "video:studio": "remotion studio video/src/index.ts --public-dir=video/public",
-    "video:render": "remotion render video/src/index.ts FancyToyExplainer video/out/fancy-toy-explainer.mp4 --public-dir=video/public"
+    "video:render": "remotion render video/src/index.ts FancyToyExplainer video/out/fancy-toy-explainer.mp4 --public-dir=video/public",
+    "video:chart": "remotion render video/src/index.ts SalesChart video/out/sales-chart.mp4 --public-dir=video/public"
   },
   "keywords": [],
   "author": "",
